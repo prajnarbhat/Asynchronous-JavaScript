@@ -3,7 +3,7 @@
 // Example: fetching data from server1 and server2, after async operation we will get promise  from both server
 
 // Promise.all : Waits for all promises to resolve and returns their results as an array. If any promise is rejected, it immediately rejects.
-const p1 = new Promise(function(resolve,reject) {
+const p1 = new Promise(function(resolve, reject) {
     // async operation
     setTimeout(function() {
         console.log("This is operation1");
@@ -13,7 +13,7 @@ const p1 = new Promise(function(resolve,reject) {
 });
 
 // another promise
-const p2 = new Promise(function(resolve,reject) {
+const p2 = new Promise(function(resolve, reject) {
     setTimeout(function() {
         console.log("This is operation2:");
         resolve(2);
@@ -27,7 +27,7 @@ const p2 = new Promise(function(resolve,reject) {
 // after both p1 and p2 get resolved promise.all function returns an promise
 // result will have the data of both p1 and p2 object in the form of array
 Promise.all([p1,p2]).then(function (result) {
-    console.log("Promise of both promise:",result);
+    console.log("Promise of both promise:", result);
 }).catch(function(error) {
     console.log(error);
 })

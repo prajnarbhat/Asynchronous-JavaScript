@@ -37,7 +37,7 @@ function getUser(id){
 function getRepos(userName) {
     return new Promise(function(resolve, reject) {
         console.log("Getting repos");
-        resolve(["repo1","repo2","repo3"]);
+        resolve(["repo1", "repo2", "repo3"]);
     });
 };
 

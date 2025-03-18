@@ -15,7 +15,7 @@ console.log("Object data:", getUser(1));
 
 function getUser(id){
     return new Promise(function(resolve,reject) {
-        console.log("Fetching data from server:")
+        console.log("Fetching data from server:");
         resolve({id, userName: "abc"});
     },2000);
 }
