@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "age": 28,
+      "email": "alice@example.com",
+      "hobbies": ["painting", "cycling"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "age": 32,
+      "email": "bob@example.com",
+      "hobbies": ["gaming", "hiking"]
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "age": 25,
+      "email": "charlie@example.com",
+      "hobbies": ["reading", "swimming"]
+    }
+  ]
+  
