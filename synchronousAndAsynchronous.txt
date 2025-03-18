@@ -1,0 +1,4 @@
+1. Synchronous: Operation are performed one after another in sequence. Each line of code waits the previous one to finish before
+proceeding to next Operation
+
+
