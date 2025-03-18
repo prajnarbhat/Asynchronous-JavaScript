@@ -21,7 +21,7 @@ const p1 = new Promise(function(resolve, reject) {
     // so data is successfully fetched
 })
 
-console.log("Object of promise P1:",p1);
+console.log("Object of promise P1:", p1);
 // output:  Promise { 1 }
 
 // Now we need to pass the object data to the user who requested for the data
@@ -33,7 +33,7 @@ p1.then(function(result) {
 })
 
 // Handling rejected promises
-const p2 = new Promise(function(resolve,reject) {
+const p2 = new Promise(function(resolve, reject) {
     reject(new Error("Error occurred"));
     //  a new erroe method will be created with an message
 })
@@ -41,7 +41,7 @@ const p2 = new Promise(function(resolve,reject) {
 p2.then(function(result) {
     console.log(result);
 }).catch(function(error) {
-    console.log("Data is not fetched:",error.message);
+    console.log("Data is not fetched:", error.message);
 })
 
 // output:

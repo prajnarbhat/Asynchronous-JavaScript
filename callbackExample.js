@@ -7,7 +7,7 @@ getUser(1, function(user) {
     console.log(user);
     console.log("Username of user:",user.userName);
     getRepos(user.userName, function(repodetails) {
-        console.log(repodetails)
+        console.log(repodetails);
         getCommits(repodetails[0], function(message) {
             console.log(message);
         })

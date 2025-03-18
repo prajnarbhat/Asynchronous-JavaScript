@@ -1,5 +1,5 @@
 
-console.log("Before")
+console.log("Before");
 
 // async promise
 // const p = getUser(id) console.log(p) will return promise with fetched data
@@ -23,12 +23,12 @@ getUser(1).then(function(user) {
         })
     })
 }).catch(function(error) {
-    console.log(error.message)
+    console.log(error.message);
 })
 
 function getUser(id){
     return new Promise(function(resolve, reject) {
-        console.log("Fetching data from server:")
+        console.log("Fetching data from server:");
         resolve({id, userName: "abc"});
     },2000);
 }

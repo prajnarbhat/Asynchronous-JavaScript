@@ -18,7 +18,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?format=txt').then(function(result) {
 }).then(function(data) {
     console.log("Data fetched:",data);
 }).catch(function(error) {
-    console.log(error)
+    console.log(error);
 })
 
 // output: I won the lottery today!

@@ -20,7 +20,7 @@ function getUser(id) {
 };
 
 function Repos(userName){
-    return new Promise(function(resolve,reject){
+    return new Promise(function(resolve, reject){
         setTimeout(function(){
             console.log("Fetching repose of paritcular user:");
             resolve(["rep1","repo2","repo3"]);
@@ -29,7 +29,7 @@ function Repos(userName){
 };
 
 function CommitMessage(repo) {
-    return new Promise(function(resolve,reject){
+    return new Promise(function(resolve, reject){
         setTimeout(function() {
             resolve("commit message");
         });

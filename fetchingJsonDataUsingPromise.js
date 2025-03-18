@@ -24,7 +24,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then(function(result) {
         console.log(data[i].name);
     }
 }).catch(function(error) {
-    console.log(error)
+    console.log(error);
 })
 
 // output: I won the lottery today!

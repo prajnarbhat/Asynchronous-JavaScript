@@ -8,7 +8,7 @@ const p1 = new Promise(function(resolve,reject) {
     setTimeout(function() {
         console.log("This is operation1");
         // resolve(1);
-        reject(new Error("something went wrong"))
+        reject(new Error("something went wrong"));
     },2000);
 });
 
@@ -27,7 +27,7 @@ const p2 = new Promise(function(resolve,reject) {
 // after both p1 and p2 get resolved promise.all function returns an promise
 // result will have the data of both p1 and p2 object in the form of array
 Promise.all([p1,p2]).then(function (result) {
-    console.log("Promise of both promise:",result)
+    console.log("Promise of both promise:",result);
 }).catch(function(error) {
     console.log(error);
 })
