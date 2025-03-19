@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> Country Information Finder </title>
+    </head>
+    <body>
+        <h2> Contry Information finder </h2>
+        <input type="text" id="inputvalue"/>
+        <button onclick="countryInfo()"> Click me! </button>
+        <p id="countryOutput"> </p>
+        <script>
+            async function countryInfo() {
+                let inputValue = document.getElementById('inputvalue').value;
+                let url = `https://restcountries.com/v3.1/name/${inputValue}`
+
+                try {
+                     const response = await fetch(url);
+
+                    const data = await response.json();
+                    console.log(data);
+                    const datainfo = data[0];
+                    console.log("Country name:", data[0].name.common);
+                    console.log("Country capital:", data[0].capital[0]);
+                    console.log("Country population:", data[0].population);
+
+                    document.getElementById('countryOutput').innerText = 
+                        `country name: ${datainfo.name.common} capital: ${datainfo.capital[0]} population: ${datainfo.population}`
+                }
+                catch(error) {
+                    console.log(error);
+                }
+            }
+        </script>
+    </body>
+</html>

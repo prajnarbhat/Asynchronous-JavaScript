@@ -31,13 +31,13 @@ function getUser(id) {
 function getRepos(userName) {
     return new Promise(function(resolve, reject) {
         setTimeout(function() {
-            resolve(["repo1","repo2","repo2"]);
+            resolve(["repo1", "repo2", "repo2"]);
         });
     });
 };
 
 function getCommitMessage(repo) {
-    return new Promise(function(resolve,reject) {
+    return new Promise(function(resolve, reject) {
         setTimeout(function() {
             resolve("My first commit");
         });
