@@ -29,7 +29,7 @@ console.log("Object of promise P1:", p1);
 // Handling the resolved promise
 // p1.then is an function which takes another function and log the fetched data
 p1.then(function(result) {
-    console.log("Data is fetched:",result);
+    console.log("Data is fetched:", result);
 })
 
 // Handling rejected promises
